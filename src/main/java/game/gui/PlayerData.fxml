@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.gui.PlayerDataController">
+   <children>
+      <ImageView fx:id="bg" fitHeight="1000.0" fitWidth="1077.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/Wizards.jpeg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="textField" layoutX="369.0" layoutY="462.0" prefHeight="34.0" prefWidth="255.0" promptText="ex. Zeus" scaleX="1.66" scaleY="1.66" />
+      <ImageView fx:id="button1" fitHeight="71.0" fitWidth="278.0" layoutX="368.0" layoutY="568.0" onMouseClicked="#setPlayerName" pickOnBounds="true" preserveRatio="true" scaleX="1.66" scaleY="1.66">
+         <image>
+            <Image url="@../../../resources/images/buttons/1.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="submitLabel" alignment="CENTER" layoutX="377.0" layoutY="585.0" prefHeight="18.0" prefWidth="244.0" scaleX="1.66" scaleY="1.66" text="Submit" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorLabel" alignment="CENTER" layoutX="197.0" layoutY="507.0" prefHeight="51.0" prefWidth="600.0" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imageView" fitHeight="136.0" fitWidth="450.0" layoutX="276.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/buttons/3.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="mainLabel" alignment="CENTER" layoutX="291.0" layoutY="294.0" prefHeight="39.0" prefWidth="418.0" text="Please Enter Your Name" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="AIvsAIImageView" fitHeight="136.0" fitWidth="450.0" layoutX="272.0" layoutY="679.0" onMouseClicked="#AIvsAI" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/buttons/3.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="AIvsAI" alignment="CENTER" layoutX="287.0" layoutY="721.0" prefHeight="39.0" prefWidth="418.0" text="AI VS AI">
+         <font>
+            <Font size="29.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>

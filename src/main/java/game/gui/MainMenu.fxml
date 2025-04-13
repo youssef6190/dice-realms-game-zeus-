@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="995.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.gui.MainMenuController">
+   <children>
+      <ImageView fx:id="bg" fitHeight="605.0" fitWidth="635.0" layoutX="191.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true" scaleX="1.66" scaleY="1.66">
+         <image>
+            <Image url="@../../../resources/images/mainMenu.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="button1" fitHeight="108.0" fitWidth="350.0" layoutX="340.0" layoutY="545.0" onMouseClicked="#setGameModeMultiplayer" pickOnBounds="true" preserveRatio="true" scaleX="1.66" scaleY="1.66">
+         <image>
+            <Image url="@../../../resources/images/buttons/1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="button2" fitHeight="94.0" fitWidth="332.0" layoutX="348.0" layoutY="707.0" onMouseClicked="#setGameModeSinglePlayer" pickOnBounds="true" preserveRatio="true" scaleX="1.66" scaleY="1.66">
+         <image>
+            <Image url="@../../../resources/images/buttons/3.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="multiplayerLabel" alignment="CENTER" layoutX="350.0" layoutY="570.0" prefHeight="19.0" prefWidth="322.0" scaleX="1.66" scaleY="1.66" text="MultiPlayer" textFill="WHITE">
+         <font>
+            <Font name="MinionPro-Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="singlePlayerLabel" alignment="CENTER" layoutX="359.0" layoutY="740.0" prefHeight="18.0" prefWidth="322.0" scaleX="1.66" scaleY="1.66" text="SinglePlayer" textFill="WHITE">
+         <font>
+            <Font name="MinionPro-Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="logo" fitHeight="246.0" fitWidth="262.0" layoutX="385.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true" scaleX="1.66" scaleY="1.66">
+         <image>
+            <Image url="@../../../resources/images/Logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
